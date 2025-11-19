@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Waziobia Fruit Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>🍉 Waziobia Fruit Shop 🍌</h1>
+      <p><em>Your Home for Fresh, Healthy Fruits in Lagos!</em></p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <p><strong>Navigate Our Site:</strong></p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <!-- Main Content Area -->
+    <main>
+      <h2>Contact Us</h2>
+      <p>
+        We'd love to hear from you! Whether you have questions about our
+        products, want to place an order, need information about bulk purchases,
+        or just want to say hello, feel free to reach out to us.
+      </p>
+
+      <h3>Our Contact Information</h3>
+
+      <h4>Visit Our Store</h4>
+      <p>
+        <strong>Waziobia Fruit Shop</strong><br />
+        45 Ikorodu Road, Mainland<br />
+        Lagos, Nigeria<br />
+        (Near Palmgrove Bus Stop, Opposite First Bank Branch)
+      </p>
+
+      <h4>Call or Message Us</h4>
+      <p>
+        <strong>Phone:</strong> +234 803 456 7890<br />
+        <strong>WhatsApp:</strong> +234 803 456 7890<br />
+        <strong>Email:</strong> info@waziobiafruits.com<br />
+        <strong>Alternative Email:</strong> orders@waziobiafruits.com
+      </p>
+
+      <hr />
+
+      <h3>Send Us a Message</h3>
+      <p>
+        Fill out the form below and we'll get back to you as soon as possible.
+        We typically respond within 24 hours during business days.
+      </p>
+
+      <!-- Contact Form -->
+      <form action="submit_form.php" method="post">
+        <fieldset>
+          <legend><strong>Your Information</strong></legend>
+
+          <p>
+            <label for="name"
+              ><strong>Full Name:</strong> <em>(Required)</em></label
+            ><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              size="50"
+              required
+              placeholder="Enter your full name"
+            />
+          </p>
+
+          <p>
+            <label for="email"
+              ><strong>Email Address:</strong> <em>(Required)</em></label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              size="50"
+              required
+              placeholder="your.email@example.com"
+            />
+          </p>
+
+          <p>
+            <label for="phone"><strong>Phone Number:</strong></label
+            ><br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              size="50"
+              placeholder="+234 XXX XXX XXXX"
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Your Message</strong></legend>
+
+          <p>
+            <label for="subject"
+              ><strong>Subject:</strong> <em>(Required)</em></label
+            ><br />
+            <select id="subject" name="subject" required>
+              <option value="">-- Please Select --</option>
+              <option value="general">General Inquiry</option>
+              <option value="order">Place an Order</option>
+              <option value="bulk">Bulk Order/Event Inquiry</option>
+              <option value="delivery">Delivery Information</option>
+              <option value="feedback">Feedback/Compliment</option>
+              <option value="complaint">Complaint</option>
+              <option value="partnership">Partnership/Business Proposal</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="message"
+              ><strong>Your Message:</strong> <em>(Required)</em></label
+            ><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
+              cols="50"
+              required
+              placeholder="Type your message here..."
+            ></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="submit" value="Send Message" />
+          <input type="reset" value="Clear Form" />
+        </p>
+      </form>
+
+      <hr />
+
+      <p>
+        <strong>Still have questions?</strong> Call us at +234 803 456 7890 or
+        visit our store!
+      </p>
+    </main>
+  </body>
+</html>
